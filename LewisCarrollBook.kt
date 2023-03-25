@@ -16,10 +16,13 @@ class LewisCarrollBook {
             return field
         }
     var price = 0
+        get() {
+            println(   "Putting a new price..." )
+            return field
+        }
         set(value) {
             println(
-                "Putting a new price...\n" +
-                        "The new price is $value."
+                        "The new price is $value"
             )
             field = value
         }
