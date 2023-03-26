@@ -29,19 +29,16 @@ class LewisCarrollBook {
 }
 
 fun main() {
-    val lewisCarrollBook = LewisCarrollBook()
-    var bookName = lewisCarrollBook.name
-    lewisCarrollBook.name = "Alice's Adventures in Wonderland"
-    bookName = lewisCarrollBook.name
-    var authorName = lewisCarrollBook.author
-    var bookPrice = lewisCarrollBook.price
-    lewisCarrollBook.price = 1500
+
 }
 
-/* The name of the book is
-Now, a book called Alice's Adventures in Wonderland
-The name of the book is Alice's Adventures in Wonderland
-The author of the book is Lewis Carroll
-Putting a new price...
-The new price is 1500 */
-
+class IceCreamOrder() {
+    var price: Int = 0
+    constructor(_popsicles: Int) : this() {
+        price = _popsicles * 7
+    }
+    constructor(_scoops: Int, _toppings: Int) : this() {
+        price = _scoops * 5
+        price = _toppings * 2
+    }
+}
