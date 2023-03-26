@@ -34,11 +34,12 @@ fun main() {
 
 class IceCreamOrder() {
     var price: Int = 0
-    constructor(_popsicles: Int) : this() {
-        price = _popsicles * 7
+
+    constructor(popsicles: Int) : this() {
+        price = popsicles *7
     }
-    constructor(_scoops: Int, _toppings: Int) : this() {
-        price = _scoops * 5
-        price = _toppings * 2
+
+    constructor(scoops: Int,toppings: Int) : this() {
+        price = scoops * 5 + toppings * 2
     }
 }
